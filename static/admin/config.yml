@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master
 
-media-folder: static/images
+media_folder: static/images
 public_folder: ../../static/images/
 
 collections:
@@ -16,4 +16,4 @@ collections:
       - { label: "Location", name: "location", widget: "string"}
       - { label: "Travel Dates", name: "travel-dates", widget: "string"}
       - { label: "Featured Image", name: "featured-image", widget: "image"}
-      - { label: "Body", name" "body", widget: "markdown"}npm 
+      - { label: "Body", name: "body", widget: "markdown"}
