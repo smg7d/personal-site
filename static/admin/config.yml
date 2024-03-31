@@ -5,7 +5,7 @@ backend:
 media-folder: static/images
 public_folder: ../../static/images/
 
-collection:
+collections:
   - name: "travel-packages"
     preview: false
     label: "Travel Packages"
@@ -16,4 +16,4 @@ collection:
       - { label: "Location", name: "location", widget: "string"}
       - { label: "Travel Dates", name: "travel-dates", widget: "string"}
       - { label: "Featured Image", name: "featured-image", widget: "image"}
-      - { label: "Body", name" "body", widget: "markdown"}
+      - { label: "Body", name" "body", widget: "markdown"}npm 
