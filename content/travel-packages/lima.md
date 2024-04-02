@@ -1,5 +1,5 @@
 ---
-location: Lima Peru
+title: Lima Peru
 travel-dates: August 20, 2024 - September 10, 2024
 featured-image: ../../static/images/IMG_1168.jpeg
 ---

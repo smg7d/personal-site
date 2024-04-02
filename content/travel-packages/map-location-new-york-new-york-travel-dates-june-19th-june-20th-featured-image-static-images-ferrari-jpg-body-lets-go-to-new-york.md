@@ -1,5 +1,5 @@
 ---
-location: New York, New York
+title: New York, New York
 travel-dates: June 19th, June 20th
 featured-image: ../../static/images/ferrari.jpg
 ---

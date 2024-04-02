@@ -18,18 +18,18 @@ const IndexPage = ({data}) => (
         <li key={node.id}>{node.base} | {node.prettySize}</li>
         ))}
       </ul>
-      <Row>
+      <Row className='g-4'>
       {data.travelLocations.edges.map(({node}) => (
         <Col lg={4} xs={6} key={node.id}>
           <Card>
             <GatsbyImage
                 image={getImage(node.frontmatter.featured_image)}
-                alt={node.frontmatter.location}
+                alt={node.frontmatter.title}
                 className="card-img-top"
             />
             <Card.Body>
               <Card.Title>
-                <p>{node.frontmatter.location}</p>
+                <p>{node.frontmatter.title}</p>
               </Card.Title>
               <p>{node.frontmatter.travel_dates}</p>
             </Card.Body>
@@ -62,14 +62,13 @@ export const query = graphql`
         }
       }
     }
-    travelLocations: allMarkdownRemark {
+    travelLocations: allMarkdownRemark(sort: {frontmatter: {title: ASC}}) {
       edges {
         node {
           id
           frontmatter {
             title
             travel_dates
-            location
             featured_image {
               childImageSharp {
                 gatsbyImageData(width: 600, aspectRatio: 1.5)

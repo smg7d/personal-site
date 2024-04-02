@@ -1,5 +1,5 @@
 ---
-location: Venice
+title: Venice
 travel-dates: November 10, 2024 - December 1, 2024
 featured-image: ../../static/images/IMG_1162.jpeg
 ---
